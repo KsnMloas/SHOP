@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import BgVideo from "../src/assets/BgVideo.mp4";
 
 const App: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -8,7 +9,7 @@ const App: React.FC = () => {
     <div className="landing-container">
       {/* Video Background */}
       <video autoPlay muted loop playsInline className="video-background">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-technology-mesh-network-connection-23215-large.mp4" type="video/mp4" />
+        <source src="{BgVideo}" type="video/mp4" />
       </video>
       <div className="overlay"></div>
 
